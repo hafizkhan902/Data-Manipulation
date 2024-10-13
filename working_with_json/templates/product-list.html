@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .products-list{
+            display: flex;
+            justify-content: center;
+            gap:20px;
+            margin: 0;
+            padding: 10px;
+            border-bottom: 2px solid red;
+        }
+        .products-detail{
+            display: flex;
+            justify-content: center;
+            gap:100px;
+            flex-direction: row;
+        }
+        .btn{
+            display: flex;
+            margin: 5px 2px;
+        }
+        .btn:hover{
+            cursor: pointer;
+            background-color: rgb(148, 43, 4);
+        }
+
+        button{
+            height: 3.8vh;
+            width: 100px;
+            text-align:center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            background-color: orangered;
+            font-weight: 400;
+            color: white;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="products-list">
+        <div class="products-detail">
+            <div class="product-image">
+                <img src={{%IMAGE%}} height="120" width="120">
+            </div>
+            <div class="product-specs">
+                <h3>{{%NAME%}}</h3>
+                <p><span>Model Name:</span>{{%MODELNAME%}}</p>
+                <p><span>Model Number:</span>{{%MODELNO%}}</p>
+                <p><span>Size:</span>{{%SIZE%}}</p>
+                <p><span>Camera:</span>{{%CAMERA%}}</p>
+            </div>
+        </div>
+        <div class="products-detail">
+            <div class="product-info"><h4>Price: $123</h4></div>
+            <div class="product-info"><h4>Color: Black</h4></div>
+            <div class="product-info">
+                <button class="btn btn-primary">Buy Now</button>
+                <button class="btn btn-secondary">Show Details</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+
